@@ -1,0 +1,218 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  animation: moveBackground 1.5s ease-in-out infinite;
+  background-size: 150% 150% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.todo-container {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(10, 10, 10, 50);
+
+  margin: auto;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.todo-input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+}
+
+.add-btn-main, .update-btn-main {
+  padding: 12px 30px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem ;
+}
+
+.add-btn-main {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.add-btn-main:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #3bdc6c, #31e6c7);
+}
+
+.update-btn-main {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.update-btn-main:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff8750, #ff4450);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-size: 20px;
+  animation: slideUp 0.4s ease-in-out;
+}
+
+.todo-item:hover {
+  background: #eef1f5;
+  transform: translateX(5px);
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.update-btn, .delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.update-btn:hover {
+  color: #ff9800;
+  transform: scale(1.2);
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+  transform: scale(1.2);
+}
+
+.todo-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+.empty-msg {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.clear-btn
+{
+  padding: 12px 30px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem ;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 30% 30%;
+  }
+  30% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 70% 70%;
+  }
+  70% {
+    background-position: 80% 80%;
+  }
+  100% {
+    background-position: 30% 30%;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: transparent;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: black;
+  border-radius: 0 0 10px 10px;
+  font-size: 15px;
+  box-shadow: 0px 10px 25px rgba(10, 10, 10, 50);
+  margin-top: 30px;
+}
+
+.footer p {
+  margin: 0;
+}

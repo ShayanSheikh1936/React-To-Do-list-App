@@ -1,0 +1,52 @@
+
+@media (max-width: 375px) {
+    .todo-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .input-section {
+      flex-direction: column;
+    }
+  
+    .todo-input {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+  
+    .add-btn-main, .update-btn-main, .clear-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    .todo-item {
+      font-size: 18px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .btn-group {
+      margin-top: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .todo-input {
+      font-size: 1rem;
+    }
+  
+    .todo-item {
+      font-size: 16px;
+    }
+  
+    .footer {
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  }
+  
