@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import "./responsive.css";
 import {ScrollText} from 'lucide-react';
+import { ImCross } from "react-icons/im";
+import { FaPencilAlt } from "react-icons/fa";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
@@ -80,10 +82,10 @@ function clearAll() {
               <span>{todo}</span>
               <div className="btn-group">
                 <button className="update-btn" onClick={() => startUpdate(index)}>
-                  ✏️
+                <FaPencilAlt size={21} color="blue" />
                 </button>
                 <button className="delete-btn" onClick={() => deleteTodo(index)}>
-                  ❌
+                <ImCross size={21} color="red"/>
                 </button>
               </div>
             </li>
